@@ -1,9 +1,9 @@
 import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.commands import execute_command, cmd_ls, cmd_cd, cmd_exit
-
 
 def test_cmd_ls_no_args():
     assert cmd_ls([]) == "ls []"
