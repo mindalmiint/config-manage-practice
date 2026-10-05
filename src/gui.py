@@ -136,7 +136,7 @@ class ShellEmulatorGUI:
         return None
 
     def _on_enter_pressed(self, event):
-        """Обрабатывает Enter: парсит и выполняет команду.
+        r"""Обрабатывает Enter: парсит и выполняет команду.
 
         Читает ввод, разбирает его через parse_command,
         выполняет через execute_command, печатает результат
