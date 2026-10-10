@@ -1,7 +1,9 @@
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(
+    0, str(Path(__file__).resolve().parent.parent)
+)
 
 from src.commands import execute_command, cmd_ls, cmd_cd, cmd_exit
 
